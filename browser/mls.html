@@ -10,10 +10,10 @@
               href="VizGrimoireJS/vizgrimoire.css"/>
         <link href="VizGrimoireJS/bootstrap/css/bootstrap.css" rel="stylesheet"/>
         <link rel="stylesheet" type="text/css" href="custom.css"/>
+        <link rel="stylesheet" href="VizGrimoireJS/awesome/css/font-awesome.min.css">
         <link href="VizGrimoireJS/bootstrap/css/bootstrap-responsive.css"
               rel="stylesheet"/>
         <link rel="shortcut icon" href="favicon.png"/>
-        <link rel="stylesheet" href="VizGrimoireJS/awesome/css/font-awesome.min.css">
     </head>
 
     <body>
@@ -50,20 +50,6 @@
                         </div>
                     </div>
                     <!-- end senders -->
-
-                    <!-- time to attention -->
-                    <div class="row-fluid">
-                        <div class="span12">
-                            <div class="well">
-                                <h4>Time to Attention of Messages</h4>
-                                * (in hours)
-                                <div class="TimeTo" data-data-source="mls" data-type="attention"
-                                     data-quantil="X0.95,X0.5"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end time to attention -->
-
                 </div>
                 <!-- end left column -->
 
@@ -89,7 +75,7 @@
                                         mailing lists
                                     </td>
                                 </tr>
-				<tr>
+										<tr>
                                     <td>
                                 	<span class="GlobalData" data-data-source="mls"
                                               data-field="mls_senders"></span>                                		
@@ -100,15 +86,15 @@
                         </div>
                         <div class="span6">
                             <table class="table table-striped">
-                            	<tr>
-                                    <td>
+                            		<tr>
+                                <td>
                                 	<span class="GlobalData" data-data-source="mls"
                                               data-field="mls_sent_7"></span>                                		
                                     </td>
                                     <td>messages last week</td>
                                 </tr>
                                 <tr>
-                                    <td>
+                                <td>
                                 	<span class="GlobalData" data-data-source="mls"
                                               data-field="mls_senders_7"></span>                                		
                                     </td>
@@ -122,24 +108,30 @@
                     <!-- end stats -->
 
                     <!-- top senders -->
-                    <div class="Top" data-data-source="mls" data-period_all="true"
-                         data-metric="senders" data-limit="5"
+                    <div class="Top" data-data-source="mls" data-period="last month"
+                         data-metric="senders" data-limit="9"
                          data-people_links="true" ></div>
                     <!-- end senders-->
-
-                    <div class="Top" data-data-source="mls"
-                         data-metric="threads"
-                         data-period="last year"
-                         data-limit="5"
-                         data-people_links="true"
-                      data-threads_links="true"
-                      ></div>
 
                 </div>
                 <!-- end right column -->
 
             </div>
             <!-- end msgs sent, senders, stats, top closers -->
+
+            <!-- time to attention -->
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="well">
+                        <h4>Time to Attention of Messages</h4>
+                        * (in hours)
+                        <div class="TimeTo" data-data-source="mls" data-type="attention"
+                             data-quantil="X0.95,X0.5" style="height:100px;></div>
+                    </div>
+                </div>
+                <div class="span6"></div>
+            </div>
+            <!-- end time to attention -->
 
             <div class="row-fluid" style="margin-top:10px;">
                 <div class="span12">
@@ -154,6 +146,6 @@
 
         <script type="text/javascript" src="VizGrimoireJS/lib/jquery-1.7.1.min.js"></script>
         <script type="text/javascript" src="VizGrimoireJS/bootstrap/js/bootstrap.js"></script>
-        <script type="text/javascript" src="VizGrimoireJS/vizgrimoire.js"></script>
+        <script type="text/javascript" src="VizGrimoireJS/vizgrimoire.min.js"></script>
     </body>
 </html>
