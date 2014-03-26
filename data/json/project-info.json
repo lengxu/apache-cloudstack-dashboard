@@ -1,0 +1,16 @@
+{
+"date":"",
+"project_name" :"Apache CloudStack",
+"project_url" :"http://cloudstack.apache.org/",
+"scm_url":"https://git-wip-us.apache.org/repos/asf/cloudstack.git",
+"scm_name":"https://git-wip-us.apache.org/repos/asf/cloudstack.git",
+"scm_type":"git",
+"its_url":"https://issues.apache.org/jira/browse/CLOUDSTACK",
+"its_name":"https://issues.apache.org/jira/browse/CLOUDSTACK",
+"its_type":"Jira",
+"mls_url":"http://mail-archives.apache.org/mod_mbox/cloudstack-dev/",
+"mls_name":"Mailing lists",
+"mls_type":"mbox",
+"producer":"",
+"blog_url":""
+}
