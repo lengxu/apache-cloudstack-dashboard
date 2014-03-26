@@ -421,27 +421,36 @@ body {
     color: #555555;
 }
 
-.fppercent{ 
+.fppercent {
     font-size: 1.1em;
 }
-.zeropercent{ 
+
+.zeropercent {
     font-size: 1.1em;
 }
-.pospercent{ 
+
+.pospercent {
     font-size: 1.1em;
     color: green;
 }
-.negpercent{ 
+
+.negpercent {
     font-size: 1.1em;
     color: red;
 }
-.fa-arrow-circle-down{
-     color: red;}
-.fa-arrow-circle-up{
-     color:green;  }
 
-.MicrodashText { /*trends*/
-  text-align: center;}
+.fa-arrow-circle-down {
+     color: red;
+}
+
+.fa-arrow-circle-up{
+     color:green;
+}
+
+.MicrodashText {
+  /* trends */
+  text-align: center;
+}
 
 .dayschange{ font-size: 0.75em; }
 
@@ -455,6 +464,8 @@ body {
     min-height: 15px;
     padding: 15px;
 }
+
+/*.dayschange{ font-size: 0.85em; }*/
 
 .wellmin { ;modify .well from Bootstrap
   min-height: 20px;
@@ -497,10 +508,15 @@ width: 100%;
      text-align:left;
 }
 
+.grey-border{
+     border-bottom: 3px solid #E3E3E3;
+     text-align:center;
+     padding:12px 0px 0px 0px;
+}
+
 .big-fp-number{
      font-size:2em;
      text-align:center;
-     padding:10px 0px 10px 0px;
 }
 
 .medium-fp-number{
@@ -606,22 +622,22 @@ width: 100%;
     display:inline;    
 }
 
-.envision-component-container .flotr-mouse-value
- {
+.envision-component-container .flotr-mouse-value {
   display: none;
 }
 
-.flotr-title{ 
+.flotr-title {
   float: left;
- }
+}
 
-.text-center{ 
+.text-center {
   text-align: center;
- }
+}
 
-.text-big{ 
+.text-big {
   font-size: 1.1em;
- }
+}
+
 /* @media screen and (max-width: 600px) {
   .milestone0-scm-commits {
     width: 100%;
