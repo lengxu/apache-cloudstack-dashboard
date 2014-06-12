@@ -116,12 +116,26 @@
             </div>
             <!-- end msgs sent, senders, stats, top closers -->
 
+            <!-- unaswered posts -->
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="well">
+                        <div class="MetricsEvol" data-data-source="mls"
+                             data-metrics="unanswered_posts"
+                             data-custom-title="Unanswered posts"
+                             data-min="true" style="height:120px;"></div>
+                    </div>
+                </div>
+                <div class="span6"></div>
+            </div>
+
+            <!-- end unanswered posts -->
+
             <!-- time to attention -->
             <div class="row-fluid">
                 <div class="span12">
                     <div class="well">
-                        <h4>Time to Attention of Messages</h4>
-                        * (in hours)
+                        <strong>Time to attention of messages</strong> (in hours)
                         <div class="TimeTo" data-data-source="mls" data-type="attention"
                              data-quantil="X0.95,X0.5" style="height:100px;></div>
                     </div>
