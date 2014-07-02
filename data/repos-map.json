@@ -2,6 +2,6 @@
 "cloudstack.git":{
     "scm":"cloudstack.git",
     "its":"https:__issues.apache.org_jira_browse_CLOUDSTACK",
-    "mls":"http:__mail-archives.apache.org_mod_mbox_cloudstack-dev_"
+    "mls":"http:__mail-archives.apache.org_mod_mbox_cloudstack-dev"
     }
 }
