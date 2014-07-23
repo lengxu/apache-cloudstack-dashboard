@@ -76,7 +76,7 @@ scm-contributors **/
     color: #999999;
 }
 .breadcrumbtitle >li > a { 
-    color: #ED9C06;
+    color: #18BC9C;
     text-decoration: none;
 }
 .breadcrumbtitle >li > a:hover { 
@@ -101,8 +101,18 @@ scm-contributors **/
 .navbar-default { 
 /*    background-color: #000000;
     border-color: #ED9C06;*/
-    background-color: #ED9C06;
-    border-color: #000000;
+    background-color: #2C3E50;
+    background-image: -moz-linear-gradient(top, #2C3E50, #4E5E71);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2C3E50), to(#4E5E71));
+    background-image: -webkit-linear-gradient(top, #2C3E50, #4E5E71);
+    background-image: -o-linear-gradient(top, #2C3E50, #4E5E71);
+    background-image: linear-gradient(to bottom, #2C3E50, #4E5E71);
+    background-repeat: repeat-x;
+    border-color: #2C3E50;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2C3E50', endColorstr='#FF4E5E71', GradientType=0);
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+       -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 }
 .navbar-fixed-top { 
     border-width: 0 0 2px;
@@ -131,6 +141,11 @@ scm-contributors **/
 /** Links **/
 
 a{ 
-   color: #ED9C06;
+   color: #18BC9C;
  }
+
+a:hover,
+a:focus {
+  color: #119976;
+}
 
