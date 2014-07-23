@@ -11,135 +11,97 @@
     </div>
     <div class="col-md-9">
       <div class="row">
-        <div class="col-md-4">
-          <h6>Status 'NEW'</h6>
-          <div class="MetricsEvol" data-data-source="its" data-metrics="NEW"
-               data-min="false" help="false"  style="height:120px;"></div>
+        <div class="col-md-6">
+          <div class="MetricsEvol" data-data-source="its" data-metrics="Open"
+               data-min="false" help="false" data-custom-title="<strong>Open</strong>"  style="height:120px;"></div>
         </div>
-        <div class="col-md-4">
-          <h6>Status 'VERIFIED'</h6>
-          <div class="MetricsEvol" data-data-source="its" data-metrics="VERIFIED"
-               data-min="false" help="false" style="height:120px;"></div>
-        </div>
-        <div class="col-md-4">
-          <h6>Status 'ASSIGNED'</h6>
-          <div class="MetricsEvol" data-data-source="its" data-metrics="ASSIGNED"
-               data-min="false" help="false" style="height:120px;"></div>
+        <div class="col-md-6">
+          <div class="MetricsEvol" data-data-source="its" data-metrics="In Progress"
+               data-min="false" help="false" data-custom-title="<strong>In Progress</strong>" style="height:120px;"></div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
-          <h6>Status 'CLOSED'</h6>
-          <div class="MetricsEvol" data-data-source="its" data-metrics="CLOSED"
-               data-min="false" help="false" style="height:120px;"></div>
+        <div class="col-md-6">
+          <div class="MetricsEvol" data-data-source="its" data-metrics="Resolved"
+               data-min="false" data-custom-title="<strong>Resolved</strong>" help="false" style="height:120px;"></div>
         </div>
-        <div class="col-md-4">
-          <h6>Status 'MODIFIED'</h6>
-          <div class="MetricsEvol" data-data-source="its" data-metrics="MODIFIED"
-               data-min="false" help="false" style="height:120px;"></div>
-        </div>
-        <div class="col-md-4">
-          <h6>Status 'ON_DEV'</h6>
-          <div class="MetricsEvol" data-data-source="its" data-metrics="ON_DEV"
-               data-min="false" help="false" style="height:120px;"></div>
+        <div class="col-md-6">
+          <div class="MetricsEvol" data-data-source="its" data-metrics="Closed"
+               data-min="false" data-custom-title="<strong>Closed</strong>" help="false" style="height:120px;"></div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
-          <h6>Status 'RELEASE_PENDING'</h6>
-          <div class="MetricsEvol" data-data-source="its" data-metrics="RELEASE_PENDING"
-               data-min="false" help="false" style="height:120px;"></div>
+        <div class="col-md-6">
+          <div class="MetricsEvol" data-data-source="its" data-metrics="Reviewable"
+               data-min="false" data-custom-title="<strong>Reviewable</strong>" help="false" style="height:120px;"></div>
         </div>
-        <div class="col-md-4">
-          <h6>Status 'POST'</h6>
-          <div class="MetricsEvol" data-data-source="its" data-metrics="POST"
-               data-min="false" help="false" style="height:120px;"></div>
-        </div>
-        <div class="col-md-4">
-          <h6>Status 'ON_QA'</h6>
-          <div class="MetricsEvol" data-data-source="its" data-metrics="ON_QA"
-               data-min="false" help="false" style="height:120px;"></div>
+        <div class="col-md-6">
+          <div class="MetricsEvol" data-data-source="its" data-metrics="Ready To Review"
+               data-min="false" data-custom-title="<strong>Ready To Review</strong>" help="false" style="height:120px;"></div>
         </div>
       </div>
-    </div>            
-  </div>
-  
-  <div class="well">
-    <div class="row">
-      <div class="col-md-3">
-        <p><i><b>Current Status</b> charts show the current 'photo' of each of the states.
-	</i></p>
-	<p><i>For each of the states shown, it is specified when the issue was born.</i></P>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="MetricsEvol" data-data-source="its" data-metrics="Reopened"
+               data-min="false" data-custom-title="<strong>Reopened</strong>" help="false" style="height:120px;"></div>
+        </div>
+        <div class="col-md-6"></div>
       </div>
-      <div class="col-md-9">
-        <div class="row">
-          <div class="col-md-4">
-            <h6>Current status 'NEW'</h6>
-            <div class="MetricsEvol" data-data-source="its" data-metrics="current_NEW" data-graph="bars"
-                 data-min="false" help="false"  style="height:120px;"></div>
-          </div>
-          <div class="col-md-4">
-            <h6>Current status 'VERIFIED'</h6>
-            <div class="MetricsEvol" data-data-source="its" data-metrics="current_VERIFIED" data-graph="bars"
-                 style="height:120px;"></div>
-          </div>
-          <div class="col-md-4">
-            <h6>Current status 'ASSIGNED'</h6>
-            <div class="MetricsEvol" data-data-source="its" data-metrics="current_ASSIGNED" data-graph="bars"
-                 style="height:120px;"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <h6>Current status 'CLOSED'</h6>
-            <div class="MetricsEvol" data-data-source="its" data-metrics="current_CLOSED" data-graph="bars"
-                 data-min="false" help="false" style="height:120px;"></div>
-          </div>
-          <div class="col-md-4">
-            <h6>Current status 'MODIFIED'</h6>
-            <div class="MetricsEvol" data-data-source="its" data-metrics="current_MODIFIED" data-graph="bars"
-                 style="height:120px;"></div>
-          </div>
-          <div class="col-md-4">
-            <h6>Current Status 'ON_DEV'</h6>
-            <div class="MetricsEvol" data-data-source="its" data-metrics="current_ON_DEV" data-graph="bars"
-                 data-min="false" help="false" style="height:120px;"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <h6>Current status 'RELEASE_PENDING'</h6>
-            <div class="MetricsEvol" data-data-source="its" data-metrics="current_RELEASE_PENDING" data-graph="bars"
-                 data-min="false" help="false" style="height:120px;"></div>
-          </div>
-          <div class="col-md-4">
-            <h6>Current status 'POST'</h6>
-            <div class="MetricsEvol" data-data-source="its" data-metrics="current_POST" data-graph="bars"
-                 data-min="false" help="false" style="height:120px;"></div>
-          </div>
-          <div class="col-md-4">
-            <h6>Current status 'ON_QA'</h6>
-            <div class="MetricsEvol" data-data-source="its" data-metrics="current_ON_QA"
-                 data-min="false" help="false" data-graph="bars" style="height:120px;"></div>
-          </div>
-        </div>
+    </div>
+  </div>            
+</div>
 
-
+<div class="well">
+  <div class="row">
+    <div class="col-md-3">
+      <p><i><b>Current Status</b> charts show the current 'photo' of each of the states.
+      </i></p>
+      <p><i>For each of the states shown, it is specified when the issue was born.</i></P>
+    </div>
+    <div class="col-md-9">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="MetricsEvol" data-data-source="its" data-metrics="current_Open"
+               data-min="false" help="false" data-custom-title="<strong>Current status 'Open'</strong>"  style="height:120px;"></div>
+        </div>
+        <div class="col-md-6">
+          <div class="MetricsEvol" data-data-source="its" data-metrics="current_In Progress"
+               data-min="false" help="false" data-custom-title="<strong>Current status 'In Progress'</strong>" style="height:120px;"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="MetricsEvol" data-data-source="its" data-metrics="current_Resolved"
+               data-min="false" data-custom-title="<strong>Current status 'Resolved'</strong>" help="false" style="height:120px;"></div>
+        </div>
+        <div class="col-md-6">
+          <div class="MetricsEvol" data-data-source="its" data-metrics="current_Closed"
+               data-min="false" data-custom-title="<strong>Current status 'Closed'</strong>" help="false" style="height:120px;"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="MetricsEvol" data-data-source="its" data-metrics="current_Reviewable"
+               data-min="false" data-custom-title="<strong>Current status 'Reviewable'</strong>" help="false" style="height:120px;"></div>
+        </div>
+        <div class="col-md-6">
+          <div class="MetricsEvol" data-data-source="its" data-metrics="current_Reopened"
+               data-min="false" data-custom-title="<strong>Current status 'Reopened'</strong>" help="false" style="height:120px;"></div>
+        </div>
       </div>
     </div>
   </div>
-  
-  <div class="well">
-    <div class="row">
-      <div class="col-md-3">
-        <p><i><b>The most likely changes</b> tables show the percentages of changes among states.
-        </i></p>
-      </div>
-      <div class="col-md-9">
-        <div class="MarkovTable" data-data-source="its" data-title="Transitions among statuses"></div>
-      </div>
-    </div>
-    
+</div>
 
+<div class="well">
+  <div class="row">
+    <div class="col-md-3">
+      <p><i><b>The most likely changes</b> tables show the percentages of changes among states.
+      </i></p>
+    </div>
+    <div class="col-md-9">
+      <div class="MarkovTable" data-data-source="its" data-title="Transitions among statuses"></div>
+    </div>
   </div>
+  
 
