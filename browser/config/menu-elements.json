@@ -1,4 +1,5 @@
 {
+    "menu": {
     "scm": [
         "contributors",
         "domains",
@@ -18,4 +19,6 @@
         "repos",
         "states"
     ]
+    },
+    "releases":[]
 }
