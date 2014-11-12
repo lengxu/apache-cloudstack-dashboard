@@ -1,5 +1,5 @@
 <div class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
-  <a class="navmenu-brand" href="#"><span class='report_name'></span></a>
+  <a class="navmenu-brand report_name" href="./"></a>
   <div class="SideNavBar"></div>
 </div>
 
@@ -31,20 +31,28 @@
 
 
 <div class="navbar navbar-default navbar-fixed-top">
-  <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-  </button>
-  <span class="navbar-brand">
-    <img src="./cloudstack-logo.png" style="height: 25px;">
-  </span>
-  <span class="navbar-brand">
-    <strong id="ProjectName"><div class="ProjectNavBar"></div></strong>
-  </span>
-  <div class="btn-group" id="sp">
+  <div class="row">
+    <div class="col-md-9">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <span class="navbar-brand">
+        <img src="./cloudstack-logo.png" style="height: 25px;">
+      </span>
+      <span class="navbar-brand">
+        <strong id="ProjectName"><div class="ProjectNavBar"></div></strong>
+      </span>
+      <div class="btn-group" id="sp">
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="ReleaseSelector"></div>
+    </div>
   </div>
-<!--  <form action="contributor.html" class="navbar-form navbar-right hidden-xs" role="search" style="margin-right: 25px;">
+
+  <!--<form action="contributor.html" class="navbar-form navbar-right hidden-xs" role="search" style="margin-right: 25px;">
     <div class="form-group">
       <input type="text" class="form-control" placeholder="company, person, issue, etc.">
     </div>
