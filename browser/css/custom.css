@@ -52,6 +52,10 @@ body {
     text-align: right;
 }
 
+.numbers-summary .col-xs-3{ /* FIXME to be moved to vizgrimoire.css*/
+    text-align: center;
+    }
+
 .subsection-title{ /* FIXME to be moved to vizgrimoire.css*/
     font-family: 'Nadia Serif',Helvetica,"Helvetica Neue",Arial,sans-serif;
     font-size: 105%;
