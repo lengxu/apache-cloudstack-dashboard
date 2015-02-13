@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="Luis" >
+    <meta name="author" content="Bitergia" >
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
     <title></title>
@@ -42,7 +42,7 @@
       <div class="col-md-12">
         <div class="well">
           <div class="MetricsEvol" data-data-source="mls"
-               data-metrics="mls_sent" data-frame-time="yes"
+               data-metrics="mls_sent"
                data-min="true" style="height:160px;"></div>
           <div class="MicrodashText" data-metric="mls_sent"></div>
         </div>
@@ -55,7 +55,7 @@
       <div class="col-md-12">
         <div class="well">
           <div class="MetricsEvol" data-data-source="mls"
-               data-metrics="mls_senders" data-frame-time="yes"
+               data-metrics="mls_senders"
                data-min="true" style="height:120px;"></div>
           <div class="MicrodashText" data-metric="mls_senders"></div>
         </div>
@@ -63,22 +63,7 @@
     </div>
     <!-- end senders -->
 
-    <!-- unanswered posts -->
-    <div class="row">
-      <div class="span12">
-        <div class="well">
-          <div class="MetricsEvolCustomized" data-data-source="mls" data-frame-time="yes" 
-               data-metrics="unanswered_posts" 
-               data-custom-title="Unanswered messages by creation time" 
-               data-min="true" data-graph="bars" 
-               data-filter="repos" 
-               data-repo-filter="http:__mail-archives.apache.org_mod_mbox_cloudstack-dev,http:__mail-archives.apache.org_mod_mbox_cloudstack-users" 
-               style="height:160px;" data-legend="true"></div>
-          </div>
-        </div>
-      <div class="span6"></div>
-    </div>
-    <!-- end unanswered posts -->
+    <div class="TimezonesBlock" data-data-source="mls" data-metric="messages"></div>
 
   </div>
   <!-- end left column -->
@@ -88,12 +73,12 @@
     <!-- stats -->
     <div class="panel panel-default">
       <div class="panel-body">
-	<div class="row"><div class="col-md-12">
-	    <p class="section-title"><i class="fa fa-envelope-o"></i> Mailing Lists</p>
-	</div></div>
+    <div class="row"><div class="col-md-12">
+        <p class="section-title"><i class="fa fa-envelope-o"></i> Mailing Lists</p>
+    </div></div>
       </div>
       <div class="row">
-	<div class="col-md-12">
+    <div class="col-md-12">
           <table class="table">
             <tr>
               <td><span class="GlobalData" data-data-source="mls"
@@ -102,50 +87,49 @@
               <td>
                 <div class="SmartLinks" data-target="mls-repos.html" data-label="repositories"></div>
               </td>
-	      <td><span class="GlobalData" data-data-source="mls"
-                      data-field="mls_sent_7"></span>                                		
+          <td><span class="GlobalData" data-data-source="mls"
+                      data-field="mls_sent_7"></span>
               </td>
               <td>messages last week</td>
             </tr>
-	    <tr>
+        <tr>
               <td><span class="GlobalData" data-data-source="mls"
-                      data-field="mls_senders"></span>                                		
+                      data-field="mls_senders"></span>
               </td>
               <td>total partipants</td>
-	      <td><span class="GlobalData" data-data-source="mls"
-                      data-field="mls_senders_7"></span>                                		
+          <td><span class="GlobalData" data-data-source="mls"
+                      data-field="mls_senders_7"></span>
               </td>
               <td>participants last week</td>
-            </tr>                              
-          </table>	
-	</div>                        
+            </tr>
+          </table>
+    </div>
       </div>
       <!-- end stats -->
 
       <!-- top senders -->
       <div class="panel-body">
-	<div class="Top" data-data-source="mls" data-period_all="true"
+    <div class="Top" data-data-source="mls" data-period_all="true"
              data-metric="senders" data-limit="5"
              data-people_links="true" ></div>
-	<!-- end senders-->
+    <!-- end senders-->
       </div>
       <div class="panel-body">
-	<div class="Top" data-data-source="mls"
+    <div class="Top" data-data-source="mls"
              data-metric="threads"
              data-period_all="true"
              data-limit="5"
              data-people_links="true"
              data-threads_links="true">
-	</div>
+    </div>
       </div>
-      
+
     </div>
     <!-- end right column -->
-    
+
   </div>
   <!-- end msgs sent, senders, stats, top closers -->
 </div>
-  
 
       <!-- END SECTION  HTML-->
 
@@ -161,10 +145,23 @@
     <script src="./lib/bootstrap-3.1.1.min.js"></script>
     <script src="./lib/jasny-bootstrap-3.1.3.min.js"></script>
     <script src="./lib/vizgrimoire.min.js"></script>
-    <script src="./lib/cloudstack.js"></script>
+    <script src="./lib/timezones.js"></script>
+    <script src="./lib/alerts.js"></script>
     <!-- Piwik code will be included here-->
-    <!-- Enter here your Piwik code -->
-
+    <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//mon.bitergia.com/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//mon.bitergia.com/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
 
     <!-- End of Piwik code -->

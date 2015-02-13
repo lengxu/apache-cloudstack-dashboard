@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="Luis" >
+    <meta name="author" content="Bitergia" >
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
     <title></title>
@@ -42,7 +42,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="well">
-          <div class="MetricsEvol" data-data-source="its" data-frame-time="yes"
+          <div class="MetricsEvol" data-data-source="its"
                data-metrics="its_closed,its_opened" data-min="true"
                style="height: 160px;" data-legend="true"></div>
           <div class="MicrodashText" data-metric="its_closed" data-name="true"></div>
@@ -55,7 +55,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="well">
-          <div class="MetricsEvol" data-data-source="its" data-frame-time="yes"
+          <div class="MetricsEvol" data-data-source="its"
                data-metrics="its_closers" data-min="true"
                style="height: 120px;" data-title="People closing tickets"></div>
           <div class="MicrodashText" data-metric="its_closers"></div>
@@ -68,7 +68,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="well">
-          <div class="MetricsEvol" data-data-source="its" data-frame-time="yes"
+          <div class="MetricsEvol" data-data-source="its"
                data-metrics="its_openers" data-min="true"
                style="height: 120px;" data-title="People submitting tickets"></div>
           <div class="MicrodashText" data-metric="its_openers"></div>
@@ -96,51 +96,51 @@
     <!-- stats -->
     <div class="panel panel-default">
       <div class="panel-body">
-	<div class="row"><div class="col-md-12">
-	    <p class="section-title"><i class="fa fa-ticket"></i> Issue tracking system</p>
-	</div></div>
+    <div class="row"><div class="col-md-12">
+        <p class="section-title"><i class="fa fa-ticket"></i> Issue tracking system</p>
+    </div></div>
 
-	<div class="row">
-	  <div class="col-md-12">
-	    <table class="table">
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table">
               <tr>
-		<td><span class="GlobalData" data-data-source="its"
-			  data-field="trackers"></span></td>
-		<td>
+        <td><span class="GlobalData" data-data-source="its"
+              data-field="trackers"></span></td>
+        <td>
                   <div class="SmartLinks" data-target="its-repos.html" data-label="trackers"></div>
                 </td>
-		<td><span class="GlobalData" data-data-source="its"
+        <td><span class="GlobalData" data-data-source="its"
                       data-field="its_companies"></span></td>
-		<td>
+        <td>
                   <div class="SmartLinks" data-target="its-companies.html" data-label="companies"></div>
                 </td>
-	      </tr>
-	      <tr>
-		<td><span class="GlobalData" data-data-source="its"
-			  data-field="its_openers"></span></td>
-		<td>people submitting tickets</td>
-		<td><span class="GlobalData" data-data-source="its"
-			  data-field="its_closers"></span></td>
-		<td>people closing tickets</td>
-	      </tr>
-	      <tr>
-		<td><span class="GlobalData" data-data-source="its"
-			  data-field="its_openers_7"></span></td>
-		<td>people submitting tickets last week</td>
-		<td><span class="GlobalData" data-data-source="its"
-			  data-field="its_closers_7"></span></td>
-		<td>people closing tickets last week</td>
-	      </tr>
+          </tr>
+          <tr>
+        <td><span class="GlobalData" data-data-source="its"
+              data-field="its_openers"></span></td>
+        <td>people submitting tickets</td>
+        <td><span class="GlobalData" data-data-source="its"
+              data-field="its_closers"></span></td>
+        <td>people closing tickets</td>
+          </tr>
+          <tr>
+        <td><span class="GlobalData" data-data-source="its"
+              data-field="its_openers_7"></span></td>
+        <td>people submitting tickets last week</td>
+        <td><span class="GlobalData" data-data-source="its"
+              data-field="its_closers_7"></span></td>
+        <td>people closing tickets last week</td>
+          </tr>
             </table>
-	  </div>
-	</div>
+      </div>
+    </div>
       </div>
 
       <!-- end stats -->
 
       <!-- top closers -->
       <div class="panel-body">
-	<div class="Top" data-data-source="its" data-period_all="true"
+    <div class="Top" data-data-source="its" data-period_all="true"
              data-metric="closers" data-limit="10"
              data-people_links="true"></div>
       </div>
@@ -164,9 +164,23 @@
     <script src="./lib/bootstrap-3.1.1.min.js"></script>
     <script src="./lib/jasny-bootstrap-3.1.3.min.js"></script>
     <script src="./lib/vizgrimoire.min.js"></script>
+    <script src="./lib/timezones.js"></script>
+    <script src="./lib/alerts.js"></script>
     <!-- Piwik code will be included here-->
-    <!-- Enter here your Piwik code -->
-
+    <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//mon.bitergia.com/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 3]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//mon.bitergia.com/piwik/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
 
     <!-- End of Piwik code -->
