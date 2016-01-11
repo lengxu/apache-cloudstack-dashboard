@@ -189,7 +189,7 @@
         "divid" : "its_organizations",
         "column" : "organizations",
         "name" : "Organizations",
-        "desc" : "Number of organizations (companies, etc.) with persons active in changing code"
+        "desc" : "Number of organizations (companies, etc.) with persons active in the ticketing system"
     },
     "its_countries" : {
         "divid" : "its_countries",
@@ -392,7 +392,7 @@
         "divid" : "mls_organizations",
         "column" : "organizations",
         "name" : "Organizations",
-        "desc" : "Number of organizations (companies, etc.) with persons active in changing code"
+        "desc" : "Number of organizations (companies, etc.) with persons active in mailing list(s)"
     },
     "mls_countries" : {
         "divid" : "mls_countries",
@@ -615,7 +615,7 @@
         "divid" : "scr_organizations",
         "column" : "organizations",
         "name" : "Organizations",
-        "desc" : "Number of organizations (companies, etc.) with persons active in changing code"
+        "desc" : "Number of organizations (companies, etc.) with persons active in code review"
     },
     "scr_countries" : {
         "divid" : "scr_countries",
